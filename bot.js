@@ -41,7 +41,7 @@ bot.on('chat', (username, message) => {
 
 	//	Matches one of the keywords for sleeping
 	if(config.keyword.sleep.find(elmt => message.search(elmt) != -1)){
-		bot.chat(config.message.online);
+		bot.chat(config.message.sleep);
 		bot.quit();
 		process.exit();
 		return;
