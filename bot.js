@@ -65,5 +65,11 @@ rl.on("line", input =>{
 		return;
 	}
 
+	if(input == "/reconnect"){
+		bot.quit();
+		process.exit();
+		return;
+	}
+
 	bot.chat(input);
 });
