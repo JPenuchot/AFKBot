@@ -24,6 +24,8 @@ const rl = readline.createInterface({
 	output: process.stdout
 });
 
+console.log((process.argv[2] ? process.argv[2] : config.user.pass));
+
 const bot = mf.createBot({
 	host: config.server.address,
 	port: config.server.port,
