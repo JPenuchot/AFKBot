@@ -59,7 +59,7 @@ bot.on('login', () => {
 });
 
 rl.on("line", input =>{
-	if(input == "/deco"){
+	if(input == "/quit"){
 		bot.quit();
 		process.exit(1);
 		return;
