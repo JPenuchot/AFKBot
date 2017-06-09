@@ -17,21 +17,18 @@ if(!process.argv[2] && !config.user.pass){
 	return;
 }
 
-const user = config.user.username;
-const pass = (process.argv[2] ? process.argv[2] : config.user.pass);
-
 //	Init cmd interface and bot
 
-let rl = readline.createInterface({
+const rl = readline.createInterface({
 	input: process.stdin,
 	output: process.stdout
 });
 
-let bot = mf.createBot({
+const bot = mf.createBot({
 	host: config.server.address,
 	port: config.server.port,
-	username: user,
-	password: pass,
+	username: config.user.username,
+	password: (process.argv[2] ? process.argv[2] : config.user.pass)
 });
 
 //	Bot chat management
