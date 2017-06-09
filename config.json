@@ -1,0 +1,29 @@
+{
+	"user":{
+		"username":"Steve",
+		"pass":""
+	},
+
+	"server":{
+		"address":"127.0.0.1",
+		"port":25565
+	},
+
+	"keyword":{
+		"name" :
+		[
+			"Steve"
+		],
+
+		"sleep" :
+		[
+			"sleep"
+		]
+	},
+
+	"message":{
+		"online":"Hello I'm a bot, tell me to sleep and I'll reconnect so you can sleep.",
+		"afk":"This is my bot, I'm not there I'll be back later.",
+		"sleep":"Alright, I'll be back !"
+	}
+}
