@@ -58,6 +58,10 @@ bot.on('login', () => {
 	bot.chat(config.message.online);
 });
 
+bot.on('playerJoined', (player) => {
+	bot.chat("cc " + player + " ça sert à rien de me parler j'suis le bot de Jules, tu peux dire dodo pour que j'reco le temps de passer la nuit");
+})
+
 rl.on("line", input =>{
 	if(input == "/quit"){
 		bot.quit();
